@@ -13,3 +13,11 @@ This repository contains experiments, payloads, and vulnerable applications for 
   - Jackson
   - Java native serialization
   - ysoserial gadget chains
+
+## Purpose
+
+This repository was created to:
+
+- Understand insecure deserialization attacks
+- Experiment with gadget chains
+- Practice exploitation techniques used in real penetration tests
