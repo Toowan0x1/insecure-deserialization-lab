@@ -8,10 +8,12 @@ This repository contains experiments, payloads, and vulnerable applications for 
   - Newtonsoft.Json
   - BinaryFormatter
   - NetDataContractSerializer
+  - ObjectStateFormatter
 
 - Java
   - Jackson
   - Java native serialization
+  - Commons Collections
   - ysoserial gadget chains
 
 ## Purpose
