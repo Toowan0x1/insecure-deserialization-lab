@@ -197,7 +197,7 @@ Explanation:
 
 ### 3. Viewing the main application file
 
-```cat Program.cs``` give us:
+Program.cs:
 
 ```cs
 var builder = WebApplication.CreateBuilder(args);
