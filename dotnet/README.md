@@ -40,17 +40,52 @@ You should see something like:
 Now listening on: http://localhost:5000
 ```
 
-Open browser:
-```
-http://localhost:5000
-```
-
-Testing Locally from Burp
-run the server like:
+Open browser ```http://localhost:5000``` or testing locally from Burpsuite, we can run the server like that:
 ```bash
 dotnet run --urls=http://0.0.0.0:5000
 ```
 Then intercept traffic using burpsuite.
+
+## Testing Deserializations
+
+Now we can create simple vulnerable endpoints in ASP.NET and test using:
+- Newtonsoft.Json
+- [BinaryFormatter](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-10.0)
+- [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-10.0)
+- [ObjectStateFormatter](https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.objectstateformatter?view=netframework-4.8.1)
+
+
+### 1. Create minimal ASP.NET web app
+Create template for a minimal ASP.NET web application (no Razor pages, just a simple HTTP server):
+
+```bash
+dotnet new web -n <dotnet_appName>
+```
+
+### 2. Project Structure
+
+```bash
+$ ls
+appsettings.Development.json
+appsettings.json
+obj/
+Program.cs
+Properties/
+webapp.csproj
+```
+
+### 3. Viewing the main application file
+
+```cat Program.cs``` give us:
+
+```cs
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+```
 
 
 
