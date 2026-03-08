@@ -73,6 +73,16 @@ Program.cs
 Properties/
 webapp.csproj
 ```
+Explanation:
+
+| File             | Purpose               |
+| ---------------- | --------------------- |
+| Program.cs       | Main application code |
+| webapp.csproj    | Project configuration |
+| appsettings.json | Application settings  |
+| Properties/      | launch settings       |
+| obj/             | build artifacts       |
+
 
 ### 3. Viewing the main application file
 
@@ -86,6 +96,30 @@ app.MapGet("/", () => "Hello World!");
 
 app.Run();
 ```
+
+That's will:
+- Creates an endpoint /
+- Returns "Hello World!" on that endpoint
+
+Running the application: ```dotnet run --urls=http://0.0.0.0:5000``` and then curl:
+
+```bash
+$ curl http://localhost:5250
+Hello World!
+```
+
+Now we can create endpoints like ```/deserialize```, ```/api/test```, etc. for testing our **.NET deserialization attacks and web vulnerabilities**.
+
+We gonna see **a small vulnerable .NET endpoint** I'll add it to `Program.cs` to test **insecure deserialization**.
+
+
+
+
+
+
+
+
+
 
 
 
