@@ -24,9 +24,7 @@ This repository was created to:
 - Experiment with gadget chains
 - Practice exploitation techniques used in real penetration tests
 
-## Tools used
-
-### ysoserial tool
+## YSoSerial
 
 There are two main versions:
 - [ysoserial](https://github.com/pwntester/ysoserial) for Java.
