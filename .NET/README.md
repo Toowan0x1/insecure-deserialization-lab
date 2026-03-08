@@ -117,10 +117,3 @@ We gonna see **a small vulnerable .NET endpoint** I'll add it to `Program.cs` to
 
 
 
-
-
-
-
-
-
-
