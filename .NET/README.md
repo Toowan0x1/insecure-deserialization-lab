@@ -52,7 +52,7 @@ For example:
 #### ysoserial.net
 
 A tool used to generate malicious serialized payloads for testing .NET deserialization vulnerabilities.
-- Contains a collection of known **gadget chains** (e.g., TypeConfuseDelegate, ActivitySurrogateSelector, ObjectDataProvider).
+- Contains a collection of known **gadget chains** (e.g., ```TypeConfuseDelegate```, ```ActivitySurrogateSelector```, ```ObjectDataProvider```).
 - Generates serialized objects that embed a command inside the payload.
 - Used for **security testing and research** of insecure deserialization.
 
