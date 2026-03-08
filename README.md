@@ -29,8 +29,8 @@ This repository was created to:
 ### ysoserial tool
 
 There are two main versions:
-- Java: [ysoserial](https://github.com/pwntester/ysoserial)
-- .NET: [ysoserial.net](https://github.com/pwntester/ysoserial.net) Deserialization payload generator for a variety of .NET formatters.
+- [ysoserial](https://github.com/pwntester/ysoserial) for Java.
+- [ysoserial.net](https://github.com/pwntester/ysoserial.net) for .NET.
 
 ysoserial is a payload generator. It:
 - Uses a known gadget chain
